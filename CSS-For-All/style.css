@@ -1,0 +1,1304 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#header{
+    width: 100%;
+    
+    background-size: cover;
+    background-position: center;
+    background-color: #05050d;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 3%;
+    background-color: #f82525;
+}
+nav img{
+    padding: 5px;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 135px;
+    border: 1px solid #f82525;
+}
+nav ul{
+    margin-top: .7rem;
+    margin-bottom: .5rem
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+}
+nav .bi-task{
+    color: #f82525;
+}
+nav ul li .nav-links{                                            /*#596478*/
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative; /*CHECK-HERE*/
+}
+nav ul li .nav-links::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.4s;
+    pointer-events: none;
+}
+nav ul li .nav-links:hover::after{
+    width: 100%;
+}
+
+.navSearch{
+    background-color: white;
+}
+.navSearch input{
+    border: none;
+    outline: none;
+    width: 380px;
+    height: 30px;
+    padding: 5px;
+}
+nav ul li button{
+    background-color: white;
+    color: #f82525;
+    border: none;
+    outline: none;
+    width: 30px;
+    height: 30px;
+}
+.sec-li-sign a{
+    background-color: #2C0707;
+    color: white;
+    padding: 7px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 7px;
+}
+nav .navSearch label button{
+    display: inline-block;
+    background-color: white;
+    color: #f82525;
+    padding: 7px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 7px;
+    border: none;
+}
+.sec-li-s-btn a .bi-search{
+    color: white;
+    
+}
+.sec-li-sign a:hover{
+    background-color: rgb(254, 247, 248);
+    color: #f82525;
+    box-shadow: 0 0 7px #f82525, 0 0 7px #f82525, 0 0 7px #f82525, 0 0 7px #f82525;
+    
+}
+
+.car1-main{
+    padding: 0 12px;
+}
+
+.carousel-item img{
+    height: 480px;
+}
+#caroSlideBtnPrev, #caroSlideBtnNext{
+    background-color: #f82525; /* YAHAAA LIKHNA HAIIIIi*/
+    top: 40%;
+    bottom: 40%;
+    width: 5%;  
+    border-radius: 10px;
+   }
+   #caroSlideBtnPrev{
+    left: 1%;
+   }
+   #caroSlideBtnNext{
+    right: 1%;
+   }
+   .carousel-control-prev-icon,
+   .carousel-control-next-icon {
+    filter: invert(1);
+}
+
+.col-md-2
+{
+display: inline-block;
+width: 23%;
+}
+.col-md-2 img{
+width:100%;
+height:250px;
+}
+.car2{
+    background-color: white;
+    margin-top: 60px;
+    padding: 5px;
+}
+.car2PrevBtn, .car2NextBtn{
+    background-color: pink;
+    opacity: .7;
+}
+.caro2CardBody{
+    background-color: rgb(238, 234, 235);
+}
+.car-indicators [data-bs-target]{
+    background-color:  #f82525;
+}
+.caro2CardBody a:hover{
+    color:  white;
+    background-color: pink;
+
+}
+
+
+.four-cards{
+    width: 15%;
+    height: auto;
+    background-color: rgba(255, 229, 233, 0.999);
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+#c3-1, #c3-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#c3-1 div a img, #c3-2 div a img{
+    width: 100%;
+    padding: 5%;
+}
+.card-heading{
+    text-align: center;
+    padding-top: 7px;
+    color: #f82525;
+}
+.card3-footer a{
+    text-decoration: none;
+    color: #f82525;
+    font-size: 14px;
+    padding-left: 15px;
+}
+.card3-footer a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.card3-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 11px;
+}
+.card .card-img-container img{
+    height: 325px;
+}
+.card-img-container{
+    position: relative;
+}
+.card-img-container img{
+    width: 100%;
+    height: 100%;
+}
+.flip-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+.flip-img:hover{
+    opacity: 1;
+}
+.footer{
+    background-color: rgba(41, 39, 39, 0.949);
+    color: rgba(255, 229, 233, 0.999);
+    padding: 10px;
+    margin: 35px 0 0 0;
+}
+.f-links ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5px;
+    margin-bottom: 4px;
+}
+.f-links ul li a{
+    color: rgba(255, 229, 233, 0.999);
+}
+.f-links ul li a:hover{
+    color: rgb(254, 33, 33);
+}
+
+.card-price{
+    display: flex;
+    font-size: 12px;
+}
+.card-price .rs-cut{
+    text-decoration: line-through;
+}
+.rs-cut{
+    opacity: .7;
+}
+.rs-n-cut{
+    color: #f82525;
+    font-size: 13px;
+}
+.card-text{
+    font-size: 14px;
+    text-overflow: ellipsis;
+}
+.btn-gr{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.card-btn{
+    background-color: rgba(255, 229, 233, 0.999);
+}
+.card-btn:hover{
+    background-color: rgba(255, 247, 248, 0.999);
+    border: 1px solid #f82525;
+}
+.all-cards .col{
+    width: 260px;
+    height: auto;
+}
+
+
+.brandName{
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    font-size: 18px;
+    color: pink;
+    justify-content: center;
+}
+.login-section{
+    border: 2px solid pink;
+    height: 490px;
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.login-section:hover{
+    box-shadow: 0 0 60px pink;
+}
+.login-section .formbox{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.formbox h2{
+    text-align: center;
+    font-size: 35px;
+    color: pink;
+}
+.formbox .input-box{
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid pink;
+    margin: 30px 0;
+    position: relative;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-right: 28px;
+    color: white;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    transition: .3s ease;
+}
+.input-box .icon{
+    position: absolute;
+    top: 13px;
+    right: 0;
+    font-size: 19px;
+    color: white;
+}
+.input-box input:focus~ label,
+.input-box input:valid~ label{
+    top: -5px;
+    color: pink;
+    font-weight: 600;
+}
+.rem-password{
+    font-size: 14px;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.rem-password label {
+    color: white;
+}
+
+
+.rem-password input[type="checkbox"] {
+    border: 2px solid #f82525;
+}
+.rem-password label input{
+    accent-color: #f82525;
+    margin-right: 3px;
+}
+.rem-password a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+.rem-password a:hover{
+    color: #f82525;
+}
+.btn{
+    width: 100%;
+    height: 34px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #f82525;
+    background: pink;
+    box-shadow: rgba(0, 0, 0, 0.4);
+}
+.btn:hover{
+    border: 1px solid #f82525;
+    background-color: white;
+}
+
+.create-account{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 25px;
+}
+.create-account p a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+.create-account p{
+    color: white;
+}
+.create-account p a:hover{
+    color: #f82525;
+    font-weight: 600;
+}
+
+.login-section .formbox.register{
+    transform: translateY(-460px);
+    transition: transform .6s ease;
+}
+.login-section.active .formbox.register{
+    transform: translateY(0);
+    transition-delay: .7s;
+}
+.login-section .formbox.login{
+    transform: translateY(0);
+    transition: transform .7s;
+}
+.login-section.active .formbox.login{
+    transform: translateY(430px);
+    transition-delay: 0s;
+}
+
+
+
+
+.car2h4{
+    text-align: center;
+    font-size: 20px;
+    margin: 12px 12px 0 12px;
+    color: #f82525;
+    background-color: rgba(255, 229, 233, 0.999);
+    padding: .3%;
+}
+.car2Main{
+    display: flex;
+    padding: 11px 35px;
+    margin: 0 12px;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 229, 233, 0.999);
+  }
+  .wrapper{
+    display: flex;
+    max-width: 1400px;
+    position: relative;
+  }
+  .wrapper i{
+    top: 50%;
+    height: 90px;
+    width: 4%;
+    color: black;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 90px;
+    background: #f82525;
+    opacity: .8;
+    border-radius: 10px;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.9);
+  }
+  .wrapper i:hover{
+    background: #fdf4f4;
+    opacity: 1;
+    box-shadow: 0 0 11px #f82525, 0 0 11px #f82525, 0 0 11px #f82525, 0 0 11px #f82525;
+  }
+  .wrapper i:first-child{
+    left: -32px;
+    display: none;
+  }
+  .wrapper i:last-child{
+    right: -32px;
+  }
+  .wrapper .carousel2ins{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+  }
+  .carousel2ins.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+  .carousel2ins.dragging img{
+    pointer-events: none;
+  }
+  .carousel2ins img{
+    height: 220px;
+    border: .3px solid pink;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 7px;
+    width: calc(100% / 7);
+  }
+  .carousel2ins img:first-child{
+    margin-left: 0px;
+  }
+
+  @media screen and (max-width: 980px) {
+    .carousel2ins img{
+      width: calc(100% / 4);
+    }
+  }
+  @media screen and (max-width: 580px) {
+    .carousel2ins img{
+      width: calc(100% / 3);
+    }
+  }
+  @media screen and (max-width: 350px) {
+    .carousel2ins img{
+      width: 100%
+    }
+  }
+
+
+@media screen and (max-width: 1385px) {
+    .navSearch input{
+        width: 280px;
+    }
+}
+@media screen and (max-width: 1281px) {
+    .navSearch input{
+        width: 225px;
+    }
+    nav ul li{
+        margin: 3px 3px;
+    }
+    ul {
+        padding-left: .7rem;
+    }
+    nav ul li .nav-links{
+        font-size: 14px;
+    }
+    .logo{
+        width: 110px;
+    }
+    .four-cards{
+        width: 19%;
+    }
+}
+@media screen and (max-width: 1281px) {
+    .navSearch input{
+        width: 225px;
+        height: 25px;
+    }
+    nav ul li{
+        margin: 3px 3px;
+    }
+    ul {
+        padding-left: .7rem;
+    }
+    nav ul li .nav-links{
+        font-size: 14px;
+    }
+    .logo{
+        width: 110px;
+    }
+    
+}
+
+
+
+nav .bi{
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+    .all-cards .col{
+        width: 280px;
+    }
+    
+}
+
+@media screen and (max-width: 1030px) {
+    .all-cards .col{
+        width: 235px;
+    }
+    .btn{
+        font-size: 12.5px;
+    }
+    .brandName{
+        margin-top: 1vh;
+    }
+}
+
+@media screen and (max-width: 950px){
+    nav .cl-btn{
+        display: block;
+        font-size: 35px;
+        color: #f82525;
+    }
+    
+    nav ul{
+        border: .3px solid #f82525;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 70vh;
+        padding-top: 45px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 11px 0;
+    }
+    nav ul li .nav-links{
+        color: #f82525;
+        font-size: 19px;
+    }
+    .navSearch input{
+        width: 370px;
+    }
+    
+    nav ul .sec-list-search{
+        margin-right: 15px;
+    }
+    nav ul .cl-btn {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+    }
+    .logo{
+        width: 130px;
+        height: auto;
+    }
+    .carousel-item img{
+        height: 300px;
+    }
+    #caroSlideBtnNext, #caroSlideBtnPrev{
+        top: 32%;
+        bottom: 32%;
+        width: 8%;
+    }
+    .car2h4{
+        font-size: 20px;
+    }
+    .wrapper i{
+        width:7%;
+        border-radius: 7px;
+    }
+    .carousel2ins img {
+        height: 230px;
+    }
+    .car-h2 h2{
+        font-size: 18px;
+    }
+    .car2{
+        margin-top: 20px;
+    }
+    .card img{
+        height: 120px;
+    }
+    .card-body{
+        padding: 1rem 0.3rem;
+    }
+    .card-body h5{
+        font-size: 12px;
+    }
+    .card-body a{
+        font-size: 12px;
+    }
+    .card-text{
+        font-size: 10px;
+    }
+    .card-body .btn{
+        padding: .5px;
+        height: 25px;
+    }
+    .card3-main{
+        display: block;
+        margin: 10px;
+    }
+    .four-cards{
+        width: 100%;
+        margin: 30px 0;
+        
+    }
+    h6{
+        font-size: 30px;
+    }
+    #c3-1 div img{
+        height: 650px;
+    }
+    #c3-2 div img{
+        height: 650px;
+    }
+    .f-links ul{
+        padding: 0;
+    }
+    .f-links ul li{
+        font-size: 16px;
+    }
+    .footer{
+        padding: 1px;
+    }
+    .card3-footer a{
+        font-size: 20px;
+    }
+    .nav{
+        padding: 0 0;
+    }
+    .car-1 img{
+        width: 300px;
+    }
+    .four-cards a{
+        font-size: 21px;
+    }
+    .all-cards .col{
+        width: 232px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    nav .cl-btn{
+        display: block;
+        font-size: 35px;
+        color: #f82525;
+    }
+    
+    nav ul{
+        border: .3px solid #f82525;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 70vh;
+        padding-top: 45px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 11px 0;
+    }
+    nav ul li .nav-links{
+        color: #f82525;
+        font-size: 19px;
+    }
+    .navSearch input{
+        width: 370px;
+    }
+    
+    nav ul .sec-list-search{
+        margin-right: 15px;
+    }
+    nav ul .cl-btn {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+    }
+    .logo{
+        width: 130px;
+        height: auto;
+    }
+    .carousel-item img{
+        height: 300px;
+    }
+    #caroSlideBtnNext, #caroSlideBtnPrev{
+        top: 32%;
+        bottom: 32%;
+        width: 8%;
+    }
+    .car2h4{
+        font-size: 20px;
+    }
+    .wrapper i{
+        width:7%;
+        border-radius: 7px;
+    }
+    .carousel2ins img {
+        height: 250px;
+    }
+    .car-h2 h2{
+        font-size: 18px;
+    }
+    .car2{
+        margin-top: 20px;
+    }
+    .card img{
+        height: 120px;
+    }
+    .card-body{
+        padding: 1rem 0.3rem;
+    }
+    .card-body h5{
+        font-size: 12px;
+    }
+    .card-body a{
+        font-size: 12px;
+    }
+    .card-text{
+        font-size: 10px;
+    }
+    .card-body .btn{
+        padding: .5px;
+        height: 25px;
+    }
+    .card3-main{
+        display: block;
+        margin: 10px;
+    }
+    .four-cards{
+        width: 100%;
+        margin: 30px 0;
+        
+    }
+    h6{
+        font-size: 25px;
+    }
+    #c3-1 div img{
+        height: 550px;
+    }
+    #c3-2 div img{
+        height: 550px;
+    }
+    .f-links ul{
+        padding: 0;
+    }
+    .f-links ul li{
+        font-size: 16px;
+    }
+    .footer{
+        padding: 1px;
+    }
+    .card3-footer a{
+        font-size: 20px;
+    }
+    .nav{
+        padding: 0 0;
+    }
+    .car-1 img{
+        width: 300px;
+    }
+    
+    .four-cards a{
+        font-size: 21px;
+    }
+    .all-cards .col{
+        width: 232px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    nav .cl-btn{
+        display: block;
+        font-size: 25px;
+        color: #f82525;
+    }
+    
+    nav ul{
+        border: .3px solid #f82525;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 70vh;
+        padding-top: 45px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 11px 0;
+    }
+    nav ul li .nav-links{
+        color: #f82525;
+        font-size: 15px;
+    }
+    .navSearch input{
+        width: 170px;
+    }
+    
+    nav ul .sec-list-search{
+        margin-right: 15px;
+    }
+    nav ul .cl-btn {
+        position: absolute;
+        top: 23px;
+        left: 23px;
+        cursor: pointer;
+    }
+    .logo{
+        width: 110px;
+        height: auto;
+    }
+    .carousel-item img{
+        height: 200px;
+    }
+    #caroSlideBtnNext, #caroSlideBtnPrev{
+        top: 35%;
+        bottom: 35%;
+        width: 8%;
+    }
+    .car2h4{
+        font-size: 15px;
+    }
+    .wrapper i{
+        width:9%;
+        border-radius: 7px;
+    }
+    .carousel2ins img {
+        height: 150px;
+    }
+    .car-h2 h2{
+        font-size: 18px;
+    }
+    .car2{
+        margin-top: 20px;
+    }
+    .card img{
+        height: 120px;
+    }
+    .card-body{
+        padding: 1rem 0.3rem;
+    }
+    .card-body h5{
+        font-size: 12px;
+    }
+    .card-body a{
+        font-size: 12px;
+    }
+    .card-text{
+        font-size: 10px;
+    }
+    .card-body .btn{
+        padding: .5px;
+        height: 25px;
+    }
+    .card3-main{
+        display: block;
+        margin: 10px;
+    }
+    .four-cards{
+        width: 100%;
+        margin: 30px 0;
+        
+    }
+    #c3-1 div img{
+        height: 240px;
+    }
+    #c3-2 div img{
+        height: 240px;
+    }
+    .f-links ul{
+        padding: 0;
+    }
+    .f-links ul li{
+        font-size: 8px;
+    }
+    .footer{
+        padding: 1px;
+    }
+    .nav{
+        padding: 0 0;
+    }
+    .car-1 img{
+        width: 300px;
+    }
+    .four-cards h6{
+        margin-bottom: 0
+    }
+    .four-cards a{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    nav .cl-btn{
+        display: block;
+        font-size: 25px;
+        color: #f82525;
+    }
+    
+    nav ul{
+        border: .3px solid #f82525;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 70vh;
+        padding-top: 45px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 11px 0;
+    }
+    nav ul li .nav-links{
+        color: #f82525;
+        font-size: 15px;
+    }
+    
+    
+    nav ul .sec-list-search{
+        margin-right: 15px;
+    }
+    nav ul .cl-btn {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+    }
+    .logo{
+        width: 100px;
+        height: auto;
+    }
+    .carousel-item img{
+        height: 180px;
+    }
+    #caroSlideBtnNext, #caroSlideBtnPrev{
+        top: 35%;
+        bottom: 35%;
+        width: 8%;
+    }
+    .car2h4{
+        font-size: 15px;
+    }
+    .wrapper i{
+        width:9%;
+        border-radius: 7px;
+    }
+    .carousel2ins img {
+        height: 150px;
+    }
+    .car-h2 h2{
+        font-size: 18px;
+    }
+    .car2{
+        margin-top: 20px;
+    }
+    .card img{
+        height: 120px;
+    }
+    .card-body{
+        padding: 1rem 0.3rem;
+    }
+    .card-body h5{
+        font-size: 12px;
+    }
+    .card-body a{
+        font-size: 12px;
+    }
+    .card-text{
+        font-size: 10px;
+    }
+    .card-body .btn{
+        padding: .5px;
+        height: 25px;
+    }
+    .card3-main{
+        display: block;
+        margin: 10px;
+    }
+    .four-cards{
+        width: 100%;
+        margin: 30px 0;
+        
+    }
+    #c3-1 div a img{
+        padding: 2%;
+    }
+    #c3-2 div a img{
+        padding: 2%;
+    }
+    #c3-1 div img{
+        height: 350px;
+    }
+    #c3-2 div img{
+        height: 350px;
+    }
+    .f-links ul{
+        padding: 0;
+    }
+    .f-links ul li{
+        font-size: 10px;
+    }
+    .footer{
+        padding: 1px;
+    }
+    .nav{
+        padding: 0 0;
+    }
+    .car-1 img{
+        width: 300px;
+    }
+    .four-cards h6{
+        margin-bottom: 0;
+    }
+    .card-heading h6{
+        font-size: 20px;
+    }
+    .four-cards a{
+        font-size: 15px;
+    }
+    .all-cards .col{
+        width: 173px;
+    }
+    .btn{
+        font-size: 12px
+    }
+    .card .card-img-container img{
+        height: 250px;
+    }
+
+    /*LOGIN FORM CSS FOR MOBILE SCREEN*/
+    .brandName{
+        margin-top: 65px
+    }
+    .login-section{
+        width: 340px;
+    }
+    .formbox .input-box{
+        width: 300px;
+    }
+    .btn-box .btn{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #c3-1 div img {
+        height: 250px;
+    }
+    #c3-2 div img {
+        height: 250px;
+    }
+    .f-links ul li {
+        font-size: 8px;
+    }
+    .all-cards .col{
+        width: 196px;
+    }
+    .card-body .btn{
+        padding: 2.3px;
+        font-size: 12px;
+    }
+    .card .card-img-container img{
+        height: 230px;
+    }
+    .brandName{
+        margin-top: 15vh
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .all-cards .col{
+        width: 185px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .navSearch input{
+        width: 150px;
+    }
+    .navSearch input{
+        height: 11px;
+    }
+    nav ul li {
+        margin: 7px 0;
+    }
+    nav ul li .nav-links{
+        font-size: 13px;
+    }
+    .sec-li-sign a{
+        font-size: 12px;
+    }
+    .car2h4{
+        font-size: 13px;
+    }
+    #c3-1 div img{
+        height: 240px;
+    }
+    #c3-2 div img{
+        height: 240px;
+    }
+    .logo{
+        width: 80px;
+    }
+    .f-links ul li{
+        font-size: 8px;
+    }
+    .all-cards .col{
+        width: 170px;
+    }
+    .card-body .btn{
+        padding: 2px;
+        font-size: 11px;
+    }
+    .card .card-img-container img{
+        height: 230px;
+    }
+    .brandName{
+        margin-top: 5vh
+    }
+}
+
+@media screen and (max-width: 350px) {
+    
+    .navSearch input{
+        width: 120px;
+       
+    }
+    .logo{
+        width: 70px;
+    }
+    .car2h4{
+        font-size: 10px;
+    }
+    .card-heading h6{
+        font-size: 12px;
+    }
+    .wrapper i{
+        height: 65px;
+        line-height: 65px;
+        width: 12%;
+    }
+    #c3-1 div img{
+        height: 190px;
+    }
+    #c3-2 div img{
+        height: 190px;
+    }
+    .f-links ul li{
+        font-size: 6px;
+    }
+    .carousel-item img{
+        height: 110px;
+    }
+    .card-body .btn{
+        padding: 2px;
+        font-size: 11px;
+    }
+    .card .card-img-container img{
+        height: 270px;
+    }
+    .all-cards .col{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .card-body .btn{
+        font-size: 14px;
+    }
+    .card .card-img-container img {
+        height: 300px;
+    }
+
+    /*LOGIN FORM CSS FOR MOBILE SCREEN*/
+    .brandName{
+        margin-top: 7vh;
+    }
+    .brandName h2{
+        font-size: 20px;
+    }
+    .login-section{
+        width: 260px;
+    }
+    .formbox .input-box{
+        width: 240px;
+    }
+    .btn-box .btn{
+        font-size: 18px;
+    }
+    .rem-password{
+        font-size: 12px;
+    }
+    .create-account{
+        margin: 25px 2px;
+    }
+}

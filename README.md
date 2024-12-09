@@ -22,7 +22,7 @@
 
 
 ## 🔗 Live Demo  
-[Visit One-Basket Bazaar Live](https://one-basket-bazaar.netlify.app/)  
+[Live Preview](https://one-basket-bazaar.netlify.app/)  
 
 
 ## 🌐 Bootstrap CDN Links  
